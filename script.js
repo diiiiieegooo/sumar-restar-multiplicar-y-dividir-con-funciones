@@ -25,4 +25,3 @@ function sumar(a, b) {
   console.log("Resultado de la resta: " + restar(numero1, numero2));
   console.log("Resultado de la multiplicación: " + multiplicar(numero1, numero2));
   console.log("Resultado de la división: " + dividir(numero1, numero2));
-  

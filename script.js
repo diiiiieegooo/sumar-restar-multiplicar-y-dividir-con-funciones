@@ -1,29 +1,35 @@
+calcular();
+function calcular() {
+    let num1 = parseInt(prompt("Pon tu primer número:"));
+    let num2 = parseInt(prompt("Pon tu segundo número:"));
+    sumar(num1, num2);
+    restar(num1, num2);
+    multiplicar(num1, num2);
+    dividir(num1, num2);
+}
 function sumar(num1, num2) {
-    return num1 + num2;
+    let resultado = num1 + num2;
+    console.log(`La suma es: ${resultado}`);
+    alert("El resultado de la suma es: " + suma);
 }
 
+
 function restar(num1, num2) {
-    return num1 - num2;
+    let resultado = num1 - num2;
+    console.log(`La resta es: ${resultado}`);
+    alert("El resultado de la resta es: " + resta);
 }
 
 function multiplicar(num1, num2) {
-    return num1 * num2;
+    let resultado = num1 * num2;
+    console.log(`La multiplicación es: ${resultado}`);
+    alert("El resultado de la multiplicación es: " + multiplicación);
 }
+
 
 function dividir(num1, num2) {
-    if (num2 !== 0) {
-        return num1 / num2;
-    } else {
-        return "No es posible realizar operaciones por cero.";
-    }
+    let resultado = num1 / num2;
+    console.log(`La división es: ${resultado}`);
+    alert("El resultado de la división es: " + división);
+
 }
-
-alert("¡Bienvenido a mates en linea, a continuación podrá realizar sumas, restas, multiplicaciones o divisiones:");
-
-let num1 = parseFloat(prompt("Por favor, ponga el primer número aquí: "));
-let num2 = parseFloat(prompt("Ahora, ponga el segundo número aquí: "));
-
-console.log("El resultado de la suma es: " + sumar(num1, num2));
-console.log("El resultado de la resta es: " + restar(num1, num2));
-console.log("El resultado de la multiplicación es: " + multiplicar(num1, num2));
-console.log("El resultado de la división es: " + dividir(num1, num2));
